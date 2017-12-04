@@ -1,0 +1,2 @@
+OUTPUT = 'json'
+INTERVAL = 5
