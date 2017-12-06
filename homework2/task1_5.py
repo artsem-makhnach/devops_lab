@@ -8,4 +8,4 @@ for i in range(n):
     elif (i+1)%5 == 0:
         print 'Buzz'
     else:
-        print (i+1)
+        print i+1

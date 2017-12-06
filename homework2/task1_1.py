@@ -17,18 +17,14 @@ minGrade = min(listTmp)
 
 listTmp2 = []
 for i in range(n):
-    if listTmp[i] > minGrade and i == n-1:
-        listTmp2.append(i)
-        break
-    elif listTmp[i] > minGrade and i < n-1 and listTmp[i] == listTmp[i+1]:
-        listTmp2.append(i)
-    elif listTmp[i] > minGrade and listTmp[i] < listTmp[i+1]:
-        listTmp2.append(i)
-        break
+    if listTmp[i] != minGrade:
+        listTmp2.append(listTmp[i])
+minGrade2 = min(listTmp2)
 
 listTmp3 = []
-for i in range(len(listTmp2)):
-    listTmp3.append(students[i+1][0])
+for i in range(len(listTmp)):
+    if listTmp[i] == min(listTmp2):
+        listTmp3.append(students[i][0])
 
 listTmp3.sort()
 for i in range(len(listTmp3)):
